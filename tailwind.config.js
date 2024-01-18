@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        titillium: ["TitilliumWeb", "sans-serif"],
+        jetbrains: ["JetBrains Mono", "monospace"],
       },
       colors: {
         "white-c": "#e7e4ea",
