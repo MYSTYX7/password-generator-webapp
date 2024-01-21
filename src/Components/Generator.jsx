@@ -22,6 +22,10 @@ const Generator = ({ onGenerate }) => {
     onGenerate(generatedPassword);
   };
 
+  const handleGenerateClick = () => {
+    handleSliderChange(sliderValue);
+  };
+
   return (
     <div className="bg-darkgray-c items-center p-5">
       <CharLen
@@ -30,7 +34,7 @@ const Generator = ({ onGenerate }) => {
       />
       <button
         className="bg-green-c px-auto py-4 w-full font-bold"
-        onClick={generatePassword}
+        onClick={handleGenerateClick}
       >
         GENERATE
       </button>

@@ -12,7 +12,7 @@ const CharLen = ({ currentValue, onSliderChange }) => {
       <div className="pt-3">
         <Slider
           onChange={onSliderChange}
-          max={20}
+          max={25}
           trackStyle={{ backgroundColor: "#a5feaf", height: 6 }}
           railStyle={{ backgroundColor: "#030712", height: 6 }}
           handleStyle={{
