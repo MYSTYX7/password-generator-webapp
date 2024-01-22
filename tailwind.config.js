@@ -11,6 +11,7 @@ export default {
         "green-c": "#a5feaf",
         "darkgray-c": "#25232a",
         "lightgray-c": "#54525a",
+        "black-c": "#18161e",
       },
     },
   },

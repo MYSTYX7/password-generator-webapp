@@ -1,8 +1,11 @@
 import { useState } from "react";
 import CharLen from "./GeneratorComponents/CharLen";
+import Strength from "./GeneratorComponents/Strength";
+import Output from "./Output";
 
 const Generator = ({ onGenerate }) => {
   const [sliderValue, setSliderValue] = useState(0);
+  const [generatedPassword, setGeneratedPassword] = useState("");
 
   const handleSliderChange = (value) => {
     setSliderValue(value);
@@ -19,6 +22,7 @@ const Generator = ({ onGenerate }) => {
       generatedPassword += characters.charAt(randomIndex);
     }
 
+    setGeneratedPassword(generatedPassword);
     onGenerate(generatedPassword);
   };
 
@@ -32,8 +36,10 @@ const Generator = ({ onGenerate }) => {
         currentValue={sliderValue}
         onSliderChange={(value) => handleSliderChange(value)}
       />
+      <Strength password={generatedPassword} />
+      {/* <Output generated={generatedPassword} /> */}
       <button
-        className="bg-green-c px-auto py-4 w-full font-bold"
+        className="bg-green-c px-auto py-4 mt-5 w-full font-bold"
         onClick={handleGenerateClick}
       >
         GENERATE

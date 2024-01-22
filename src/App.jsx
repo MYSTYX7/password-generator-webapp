@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="h-screen font-jetbrains bg-gradient-to-b from-gray-950 to-black justify-center items-center flex flex-col">
-      <div className="w-1/3 flex flex-col gap-5">
+      <div className="w-1/4 flex flex-col gap-5">
         <Toaster />
         <p className="text-2xl text-lightgray-c font-bold text-center">
           Password Generator
